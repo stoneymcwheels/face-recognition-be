@@ -1,1 +1,2 @@
-# face-recognition-be
+Backend for Face Recognition app
+
