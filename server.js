@@ -20,7 +20,7 @@ const db = knex({
 
 const app = express();
 
-app.use(cors());
+app.use(cors({ origin: "http://localhost:3000/", credentials: true }))
 app.use(express.json()); // latest version of exressJS now comes with Body-Parser!
 
 app.get('/', (req, res)=> { res.send(db.users) })
